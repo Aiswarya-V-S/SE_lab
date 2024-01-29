@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light Blue color */
+        }
+
+        #dashboard {
+            background-color: #6495ed; /* Dodger Blue color */
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #dashboard h1 {
+            margin: 0;
+        }
+
+        #profile-icon {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        #profile-icon span {
+            margin-left: 5px;
+            font-weight: bold;
+            color: #000; /* Black color */
+            z-index: 1;
+        }
+
+        #profile-icon div {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            position: relative;
+            z-index: 0;
+        }
+
+        #dashboard-content {
+            padding: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dashboard-button {
+            padding: 10px;
+            background-color: #4169e1; /* Royal Blue color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .review-comments,
+        .help-hours {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #back-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: #4169e1; /* Royal Blue color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Blue border at the bottom of the webpage */
+        body::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background-color: #4169e1; /* Royal Blue color */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="dashboard">
+        <h1>Dashboard</h1>
+        <div id="profile-icon">
+            <div></div>
+            <span>Profile</span>
+        </div>
+    </div>
+
+    <div id="dashboard-content">
+        <div class="button-container">
+            <button class="dashboard-button">Decision Making</button>
+            <button class="dashboard-button">Review</button>
+            <button class="dashboard-button">Edit</button>
+            <button class="dashboard-button">More</button>
+            <button class="dashboard-button">support?</button>
+        </div>
+
+        <div class="review-comments">
+            <!-- Review Comments content goes here -->
+            <p>Review Comments:</p>
+        </div>
+
+        <div class="help-hours">
+            <!-- Help All Hours content goes here -->
+            <p>Help All Hours</p>
+        </div>
+    </div>
+
+    <button id="back-button">Back</button>
+
+</body>
+</html>

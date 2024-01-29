@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Submission Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .paper-details {
+      margin-top: 20px;
+    }
+
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .upload-btn-wrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Paper Submission</h1>
+  </header>
+
+  <section>
+    <h2>Upload Paper</h2>
+    <div class="upload-btn-wrapper">
+      <button class="btn">Upload a PDF</button>
+      <input type="file" name="file" accept=".pdf" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Submission List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Submission Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample Paper 1</td>
+          <td>John Doe, Jane Smith</td>
+          <td>2024-01-29</td>
+          <td>Under Review</td>
+        </tr>
+        <tr>
+          <td>Sample Paper 2</td>
+          <td>Alice Johnson, Bob Brown</td>
+          <td>2024-01-30</td>
+          <td>Accepted</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="paper-details">
+    <h2>Paper Details</h2>
+    <div>
+      <h3>Sample Paper 1</h3>
+      <p><strong>Authors:</strong> John Doe, Jane Smith</p>
+      <p><strong>Submission Date:</strong> 2024-01-29</p>
+      <p><strong>Status:</strong> Under Review</p>
+      <p><strong>Abstract:</strong> This is a sample abstract for the paper.</p>
+      <!-- Add more details as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Paper Submission System</p>
+  </footer>
+
+</body>
+
+</html>

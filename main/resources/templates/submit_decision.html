@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Submit Decision</title>
+</head>
+<body>
+    <header>
+        <h1>Submit Decision</h1>
+    </header>
+    <section class="decision-section">
+        <h2>Speaker: John Doe</h2>
+        <form>
+            <label for="decision">Decision:</label>
+            <select id="decision" name="decision" required>
+                <option value="accept">Accept</option>
+                <option value="reject">Reject</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <button type="submit">Submit Decision</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Submission Status</p>
+    </footer>
+</body>
+</html>
